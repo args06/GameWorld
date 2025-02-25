@@ -6,7 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6255D5872D6E2591007377DE /* codemagic.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 6255D5862D6E2586007377DE /* codemagic.yaml */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		6255D5862D6E2586007377DE /* codemagic.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codemagic.yaml; sourceTree = "<group>"; };
 		62FC01B22D62475800D68A21 /* GameWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -45,6 +50,7 @@
 		62FC01A92D62475800D68A21 = {
 			isa = PBXGroup;
 			children = (
+				6255D5862D6E2586007377DE /* codemagic.yaml */,
 				62FC01B42D62475800D68A21 /* GameWorld */,
 				62FC01B32D62475800D68A21 /* Products */,
 			);
@@ -123,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6255D5872D6E2591007377DE /* codemagic.yaml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
