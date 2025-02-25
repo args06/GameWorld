@@ -10,13 +10,9 @@ workflows:
     scripts:
       - name: Build Debug App for iOS
         script: |
-          xcodebuild \
-            -project "$XCODE_PROJECT" \
-            -scheme "$XCODE_SCHEME" \
-            -sdk iphonesimulator \
-            -configuration Debug \
-            -destination 'platform=iOS Simulator,name=iPhone 16 Pro,OS=17.6' \
-            CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO build
+          xcodebuild build -project "$XCODE_PROJECT" \
+          -scheme "$XCODE_SCHEME" \
+          CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
     artifacts:
       - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
     publishing:
