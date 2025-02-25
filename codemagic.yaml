@@ -11,8 +11,8 @@ workflows:
       - name: Run Unit Tests (Debug)
         script: |
           xcodebuild test \
-            -workspace GameWorld.xcworkspace \
-            -scheme GameWorld \
+            -workspace "$XCODE_PROJECT" \
+            -scheme "$XCODE_SCHEME" \
             -configuration Debug \
             -destination 'platform=iOS Simulator,name=iPhone 14,OS=latest' \
             -enableCodeCoverage YES
@@ -20,8 +20,8 @@ workflows:
       - name: Build Debug App for iOS
         script: |
           xcodebuild \
-            -workspace GameWorld.xcworkspace \
-            -scheme GameWorld \
+            -workspace "$XCODE_PROJECT" \
+            -scheme "$XCODE_SCHEME" \
             -sdk iphoneos \
             -configuration Debug \
             -archivePath $CM_BUILD_DIR/GameWorld.xcarchive \
