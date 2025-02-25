@@ -1,0 +1,8 @@
+included:
+  - ./
+  - ./**/*.swift
+excluded:
+  - Pods
+  - ./Pods
+  - DerivedData
+  - ./DerivedData
