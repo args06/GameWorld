@@ -8,19 +8,24 @@ workflows:
           XCODE_PROJECT: "GameWorld.xcodeproj"
           XCODE_SCHEME: "GameWorld"
     scripts:
-      - name: Run tests
+      - name: Run Unit Tests (Debug)
+        script: |
+          xcodebuild test \
+            -workspace GameWorld.xcworkspace \
+            -scheme GameWorld \
+            -configuration Debug \
+            -destination 'platform=iOS Simulator,name=iPhone 14,OS=latest' \
+            -enableCodeCoverage YES
+
+      - name: Build Debug App for iOS
         script: |
           xcodebuild \
-          -project "$XCODE_PROJECT" \
-          -scheme "$XCODE_SCHEME" \
-          -sdk iphonesimulator \
-          -destination 'platform=iOS Simulator,name=iPhone 16 Pro,OS=17.6' \
-          clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
-      - name: Build debug app
-        script: |
-          xcodebuild build -project "$XCODE_PROJECT" \
-          -scheme "$XCODE_SCHEME" \
-          CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+            -workspace GameWorld.xcworkspace \
+            -scheme GameWorld \
+            -sdk iphoneos \
+            -configuration Debug \
+            -archivePath $CM_BUILD_DIR/GameWorld.xcarchive \
+            archive
     artifacts:
       - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
     publishing:
