@@ -8,7 +8,6 @@
 import Foundation
 import SwiftUI
 import Domain
-import Core
 
 struct GameRowView: View {
     let game: Game
