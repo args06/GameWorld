@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		6255D5872D6E2591007377DE /* codemagic.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 6255D5862D6E2586007377DE /* codemagic.yaml */; };
+		6255D5AF2D6E3007007377DE /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 6255D5AE2D6E3007007377DE /* Core */; };
+		6255D6382D6E3289007377DE /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 6255D6372D6E3289007377DE /* Domain */; };
+		6255D63B2D6E34E0007377DE /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 6255D63A2D6E34E0007377DE /* Data */; };
+		6255D6C72D6E3602007377DE /* Presentation in Frameworks */ = {isa = PBXBuildFile; productRef = 6255D6C62D6E3602007377DE /* Presentation */; };
+		6255D7BF2D6F660C007377DE /* Navigation in Frameworks */ = {isa = PBXBuildFile; productRef = 6255D7BE2D6F660C007377DE /* Navigation */; };
+		6255D7EA2D7006B1007377DE /* Navigation in Frameworks */ = {isa = PBXBuildFile; productRef = 6255D7E92D7006B1007377DE /* Navigation */; };
+		6255D8982D701BE7007377DE /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 6255D8972D701BE7007377DE /* Core */; };
+		6255D89B2D701BF8007377DE /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 6255D89A2D701BF8007377DE /* Domain */; };
+		6255D89E2D701CB9007377DE /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 6255D89D2D701CB9007377DE /* Data */; };
+		6255D8A12D701CC8007377DE /* Presentation in Frameworks */ = {isa = PBXBuildFile; productRef = 6255D8A02D701CC8007377DE /* Presentation */; };
+		6255D8A42D701CD6007377DE /* Navigation in Frameworks */ = {isa = PBXBuildFile; productRef = 6255D8A32D701CD6007377DE /* Navigation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +52,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6255D7BF2D6F660C007377DE /* Navigation in Frameworks */,
+				6255D6382D6E3289007377DE /* Domain in Frameworks */,
+				6255D89E2D701CB9007377DE /* Data in Frameworks */,
+				6255D5AF2D6E3007007377DE /* Core in Frameworks */,
+				6255D7EA2D7006B1007377DE /* Navigation in Frameworks */,
+				6255D8A42D701CD6007377DE /* Navigation in Frameworks */,
+				6255D8982D701BE7007377DE /* Core in Frameworks */,
+				6255D8A12D701CC8007377DE /* Presentation in Frameworks */,
+				6255D89B2D701BF8007377DE /* Domain in Frameworks */,
+				6255D6C72D6E3602007377DE /* Presentation in Frameworks */,
+				6255D63B2D6E34E0007377DE /* Data in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +107,17 @@
 			);
 			name = GameWorld;
 			packageProductDependencies = (
+				6255D5AE2D6E3007007377DE /* Core */,
+				6255D6372D6E3289007377DE /* Domain */,
+				6255D63A2D6E34E0007377DE /* Data */,
+				6255D6C62D6E3602007377DE /* Presentation */,
+				6255D7BE2D6F660C007377DE /* Navigation */,
+				6255D7E92D7006B1007377DE /* Navigation */,
+				6255D8972D701BE7007377DE /* Core */,
+				6255D89A2D701BF8007377DE /* Domain */,
+				6255D89D2D701CB9007377DE /* Data */,
+				6255D8A02D701CC8007377DE /* Presentation */,
+				6255D8A32D701CD6007377DE /* Navigation */,
 			);
 			productName = GameWorld;
 			productReference = 62FC01B22D62475800D68A21 /* GameWorld.app */;
@@ -114,6 +147,13 @@
 			);
 			mainGroup = 62FC01A92D62475800D68A21;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6255D8962D701BE7007377DE /* XCLocalSwiftPackageReference "Core" */,
+				6255D8992D701BF8007377DE /* XCLocalSwiftPackageReference "Domain" */,
+				6255D89C2D701CB9007377DE /* XCLocalSwiftPackageReference "Data" */,
+				6255D89F2D701CC8007377DE /* XCLocalSwiftPackageReference "Presentation" */,
+				6255D8A22D701CD6007377DE /* XCLocalSwiftPackageReference "Navigation" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 62FC01B32D62475800D68A21 /* Products */;
 			projectDirPath = "";
@@ -374,6 +414,76 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		6255D8962D701BE7007377DE /* XCLocalSwiftPackageReference "Core" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Core;
+		};
+		6255D8992D701BF8007377DE /* XCLocalSwiftPackageReference "Domain" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Domain;
+		};
+		6255D89C2D701CB9007377DE /* XCLocalSwiftPackageReference "Data" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Data;
+		};
+		6255D89F2D701CC8007377DE /* XCLocalSwiftPackageReference "Presentation" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Presentation;
+		};
+		6255D8A22D701CD6007377DE /* XCLocalSwiftPackageReference "Navigation" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Navigation;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6255D5AE2D6E3007007377DE /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Core;
+		};
+		6255D6372D6E3289007377DE /* Domain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Domain;
+		};
+		6255D63A2D6E34E0007377DE /* Data */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Data;
+		};
+		6255D6C62D6E3602007377DE /* Presentation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Presentation;
+		};
+		6255D7BE2D6F660C007377DE /* Navigation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Navigation;
+		};
+		6255D7E92D7006B1007377DE /* Navigation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Navigation;
+		};
+		6255D8972D701BE7007377DE /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Core;
+		};
+		6255D89A2D701BF8007377DE /* Domain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Domain;
+		};
+		6255D89D2D701CB9007377DE /* Data */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Data;
+		};
+		6255D8A02D701CC8007377DE /* Presentation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Presentation;
+		};
+		6255D8A32D701CD6007377DE /* Navigation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Navigation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 62FC01AA2D62475800D68A21 /* Project object */;
 }
